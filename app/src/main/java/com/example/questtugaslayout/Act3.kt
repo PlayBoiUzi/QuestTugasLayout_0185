@@ -96,3 +96,20 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
         }
     }
 }
+
+// Sub-component agar Card bisa dipakai berulang kali tanpa membuat kode panjang
+@Composable
+fun CardItem(
+    nama: String,
+    alamat: String,
+    noHp: String? = null,
+    bgColor: Color,
+    fontFamily: FontFamily = FontFamily.Default
+) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 6.dp),
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(containerColor = bgColor)
+    ) {
