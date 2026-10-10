@@ -81,3 +81,18 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             alamat = stringResource(R.string.alamat4),
             bgColor = Color(0xFF006400)
         )
+
+        // Footer
+        Box(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            Text(
+                text = stringResource(R.string.copy),
+                fontSize = 12.sp,
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 20.dp)
+            )
+        }
+    }
+}
