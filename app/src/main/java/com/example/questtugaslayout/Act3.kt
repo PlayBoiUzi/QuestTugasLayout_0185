@@ -65,3 +65,12 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             alamat = stringResource(R.string.alamat2),
             bgColor = Color(0xFF7E38B7)
         )
+
+        // --- CARD 3 (Zhilal Fadhilah) ---
+        CardItem(
+            nama = stringResource(R.string.nama3),
+            noHp = stringResource(R.string.nohp3),
+            alamat = stringResource(R.string.alamat3),
+            bgColor = Color(0xFF0000FF)
+        )
+
