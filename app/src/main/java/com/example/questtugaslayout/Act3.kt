@@ -113,3 +113,16 @@ fun CardItem(
         shape = RoundedCornerShape(16.dp),
         colors = CardDefaults.cardColors(containerColor = bgColor)
     ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(12.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            // Logo Kiri
+            Image(
+                painter = painterResource(R.drawable.logo_umy),
+                contentDescription = null,
+                modifier = Modifier.size(60.dp)
+            )
