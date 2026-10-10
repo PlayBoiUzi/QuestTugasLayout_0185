@@ -57,3 +57,11 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             bgColor = Color(0xFF5A5A5A),
             fontFamily = FontFamily.Cursive
         )
+
+        // --- CARD 2 (Gibran Fathoni) ---
+        CardItem(
+            nama = stringResource(R.string.nama2),
+            noHp = stringResource(R.string.nohp2),
+            alamat = stringResource(R.string.alamat2),
+            bgColor = Color(0xFF7E38B7)
+        )
