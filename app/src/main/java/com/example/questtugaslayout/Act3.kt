@@ -126,3 +126,41 @@ fun CardItem(
                 contentDescription = null,
                 modifier = Modifier.size(60.dp)
             )
+
+            // Teks Tengah
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text(
+                    text = nama,
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                    fontFamily = fontFamily,
+                    color = Color.White
+                )
+
+                if (noHp != null) {
+                    Text(
+                        text = noHp,
+                        fontSize = 13.sp,
+                        color = Color.Cyan
+                    )
+                }
+
+                Text(
+                    text = alamat,
+                    fontSize = 13.sp,
+                    fontFamily = fontFamily,
+                    color = Color.Yellow
+                )
+            }
+
+            // Logo Kanan
+            Image(
+                painter = painterResource(R.drawable.logo_umy),
+                contentDescription = null,
+                modifier = Modifier.size(60.dp)
+            )
+        }
+    }
+}
