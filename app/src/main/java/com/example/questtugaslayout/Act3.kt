@@ -50,3 +50,10 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(20.dp))
 
+        // --- CARD 1 (Bambang Sumantri) ---
+        CardItem(
+            nama = stringResource(R.string.nama1),
+            alamat = stringResource(R.string.alamat1),
+            bgColor = Color(0xFF5A5A5A),
+            fontFamily = FontFamily.Cursive
+        )
